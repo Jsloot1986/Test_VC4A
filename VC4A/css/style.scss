@@ -1,0 +1,12 @@
+// Core partial
+
+@import "Variables";
+@import "Layout";
+@import "Base";
+@import "Mixins";
+
+// Import Modules
+
+@import "modules/Header";
+@import "modules/Main";
+@import "modules/Footer";

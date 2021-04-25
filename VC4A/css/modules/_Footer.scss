@@ -1,0 +1,112 @@
+.footer{
+    margin-left: 50px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-areas:  
+    'socail'
+    'docu'
+    'copyright';
+    .footer_socialmedia{
+        grid-area: socail;
+        i{
+            font-size: 30px;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        #footer_linkedin{
+            color: lightskyblue;    
+        }
+        #footer_twiter{
+            color: dodgerblue
+        }
+        #footer_facebook{
+            color: blue;
+        }
+    }
+    .footer_documents{
+        grid-area: docu;
+        display: flex;
+        p{
+            margin-left: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+    .footer_copyright{
+        grid-area: copyright;
+        margin-left: 30px;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 700px;
+        grid-template-rows: repeat(3, 75px);
+        
+        .footer_socialmedia{
+            margin-left: 200px;
+            i{
+                font-size: 40px;
+            }
+        }
+        .footer_documents{
+            margin-left: 200px;
+            p{
+                font-size: 20px;
+            }
+        }
+        .footer_copyright{
+            margin-left: 225px;
+            i{
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 992px) {
+    .footer{
+        grid-template-columns: 992px;
+        .footer_socialmedia{
+            margin-left: 350px;
+            i{
+                font-size: 50px;
+            }
+        }
+        .footer_documents{
+            margin-left: 350px;
+            p{
+                font-size: 30px;
+            }
+        }
+        .footer_copyright{
+            margin-left: 380px;
+            i{
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .footer{
+        grid-template-columns: 1200px;
+        .footer_socialmedia, .footer_documents{
+            margin-left: 600px;
+        }
+        .footer_copyright{
+            margin-left: 650px;
+        }
+        
+    }
+    
+}
